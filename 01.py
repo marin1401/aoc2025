@@ -15,9 +15,9 @@ zero_position_counter = 0
 zero_pass_counter = 0
 for rotation, distance in instructions:
     previous_number = number
-    if rotation == "L":
+    if rotation == 'L':
         number -= distance
-    elif rotation == "R":
+    elif rotation == 'R':
         number += distance
     if not number % 100:
         zero_position_counter += 1
@@ -28,5 +28,6 @@ for rotation, distance in instructions:
 print(zero_position_counter)
 
 # Part 2
+
 
 print(zero_pass_counter - zero_position_counter)
