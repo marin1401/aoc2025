@@ -29,6 +29,4 @@ print(zero_position_counter)
 
 # Part 2
 
-
 print(zero_pass_counter - zero_position_counter)
-
