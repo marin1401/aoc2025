@@ -23,7 +23,7 @@ for rotation, distance in instructions:
         zero_position_counter += 1
     zero_pass_counter += multiples_of_100_in_range(previous_number, number)
 
-#Part 1
+# Part 1
 
 print(zero_position_counter)
 
@@ -31,3 +31,4 @@ print(zero_position_counter)
 
 
 print(zero_pass_counter - zero_position_counter)
+
