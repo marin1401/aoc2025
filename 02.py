@@ -14,7 +14,7 @@ for first_id, last_id in id_list:
         if not id_len % 2:
             if id_num[:id_len//2] == id_num[id_len//2:]:
                 invalid_ids.append(id_num)
-        pattern = ""
+        pattern = ''
         for digit in id_num[:id_len//2]:
             pattern += digit
             if pattern*(id_len//len(pattern)) == id_num:
@@ -26,5 +26,6 @@ for first_id, last_id in id_list:
 print(sum(map(int, invalid_ids)))
 
 # Part 2
+
 
 print(sum(map(int, all_invalid_ids)))
