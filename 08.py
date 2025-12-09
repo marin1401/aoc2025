@@ -42,5 +42,4 @@ print(math.prod(circuits_sizes[:3]))
 
 # Part 2
 
-
 print(math.prod(x_coords))
