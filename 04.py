@@ -20,7 +20,7 @@ def get_next_rolls(current_rolls, next_rolls):
 rolls = set()
 for y, row in enumerate(grid):
     for x, column in enumerate(row):
-        if grid[y][x] == "@":
+        if grid[y][x] == '@':
             rolls.add((y, x))
 rolls_number = len(rolls)
 
@@ -35,4 +35,5 @@ while True:
     if len(rolls) == len(next_rolls):
         print(rolls_number - len(rolls))
         break
+
     rolls = {roll for roll in next_rolls}
