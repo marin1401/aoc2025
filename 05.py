@@ -40,5 +40,4 @@ counter = 0
 for first_id, last_id in fresh_ids:
     counter += last_id - first_id + 1
 
-
 print(counter)
