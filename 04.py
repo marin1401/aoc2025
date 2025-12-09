@@ -35,5 +35,4 @@ while True:
     if len(rolls) == len(next_rolls):
         print(rolls_number - len(rolls))
         break
-
     rolls = {roll for roll in next_rolls}
