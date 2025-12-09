@@ -11,9 +11,9 @@ def join_ranges(first_id_check, last_id_check, id_range):
             return (min(first_id, first_id_check), second_id)
     return False
 
-fresh_ids, available_ids = input_string.split("\n\n")
+fresh_ids, available_ids = input_string.split('\n\n')
 
-fresh_ids = {tuple(map(int, ids.split("-"))) for ids in fresh_ids.splitlines()}
+fresh_ids = {tuple(map(int, ids.split('-'))) for ids in fresh_ids.splitlines()}
 
 # Part 1
 
@@ -39,5 +39,6 @@ while True:
 counter = 0
 for first_id, last_id in fresh_ids:
     counter += last_id - first_id + 1
+
 
 print(counter)
