@@ -8,9 +8,9 @@ beam = set()
 qbeam = {}
 for y, row in enumerate(manifold):
     for x, column in enumerate(row):
-        if manifold[y][x] == "^":
+        if manifold[y][x] == '^':
             splitters.add((y, x))
-        elif manifold[y][x] == "S":
+        elif manifold[y][x] == 'S':
             beam_start = (y+1, x)
             beam.add(beam_start)
             qbeam[beam_start] = 1
@@ -42,5 +42,6 @@ for y, row in enumerate(manifold):
                 qbeam[(y+1, x)] += qbeam[(y, x)]
             else:
                 qbeam[(y+1, x)] = qbeam[(y, x)]
+
 
 print(sum(v for k, v in qbeam.items() if k[0] == len(manifold)-1))
