@@ -43,5 +43,4 @@ for y, row in enumerate(manifold):
             else:
                 qbeam[(y+1, x)] = qbeam[(y, x)]
 
-
 print(sum(v for k, v in qbeam.items() if k[0] == len(manifold)-1))
