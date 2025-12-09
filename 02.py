@@ -27,5 +27,4 @@ print(sum(map(int, invalid_ids)))
 
 # Part 2
 
-
 print(sum(map(int, all_invalid_ids)))
